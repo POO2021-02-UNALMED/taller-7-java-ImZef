@@ -19,10 +19,12 @@ public class Alfabeto extends Pictograma{
 	}
 	
 	public String toString() {
-		String c = null;
+		String c = "";
 		for(int i = 0; i < letras.length; i++) {
-			c += i;
-			c += ", ";
+			c += letras[i];
+			if(i != letras.length - 1) {
+				c += ", ";
+			}
 		}
 		return c;
 	}
